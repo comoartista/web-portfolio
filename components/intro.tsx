@@ -19,32 +19,27 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className=" h-screen flex flex-col items-center justify-center max-w-[50rem] sm:mt-10 scroll-mt-[100rem]">
+      className="h-screen flex flex-col items-center justify-center max-w-[50rem] sm:-mt-8 sm:mb-8 scroll-mt-[100rem]">
       <motion.div
         className=""
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ type: "tween", duration: 0.2 }}>
+        transition={{ type: "tween", duration: 0.4 }}>
         <div className="flex flex-col items-center justify-center">
-          <div className="shadow-2xl rounded-full backdrop-blur w-[96px] h-[96px] flex justify-center items-center">
-            <Image
-              src="/oksana-melnyk.png"
-              width={88}
-              height={88}
-              quality={100}
-              priority={true}
-              alt="Oksana Melnyk"
-              className="object-cover overflow-hidden rounded-full  "
-            />
-          </div>
-
-          <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center">
-            <span className="">
-              Hey there, I'm Oksana! As a frontend developer, I love turning ideas into user-friendly websites and apps.
-            </span>
+          <h1 className="mb-10 mt-4 px-4 text-4xl font-medium !leading-[1.5] text-center">
+            Hi, I'm Oksana, a{" "}
+            <span className="italic font-semibold">frontend developer</span> who
+            loves turning ideas into user-friendly websites and apps.
           </h1>
         </div>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4">
+      </motion.div>
+
+      <motion.div
+        className=""
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: "tween", duration: 0.4, delay: 0.6 }}>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
           <Link
             href="#contact"
             className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none hover:scale-110 focus:scale-110 hover:bg-gray-950 active:scale-105 transition"
@@ -53,7 +48,7 @@ export default function Intro() {
               setTimeOfLastClick(Date.now());
             }}>
             Contact me here
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition rotate-45" />
           </Link>
           <a
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
@@ -61,21 +56,22 @@ export default function Intro() {
             download>
             Download CV <HiDownload className="opacity-60" />
           </a>
-          <a
-            className="bg-white text-grey-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 borderBlack"
-            href="https://www.linkedin.com/in/comoartista/"
-            target="_blank">
-            <BsLinkedin />
-          </a>
-          <a
-            className="bg-white text-grey-700 p-4 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
-            href="https://github.com/comoartista"
-            target="_blank">
-            <FaGithubSquare />
-          </a>
+          <div className="flex items-center justify-center gap-4 ">
+            <a
+              className="bg-white text-grey-700 p-4 flex items-center  rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 borderBlack"
+              href="https://www.linkedin.com/in/comoartista/"
+              target="_blank">
+              <BsLinkedin />
+            </a>
+            <a
+              className="bg-white text-grey-700 p-4 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
+              href="https://github.com/comoartista"
+              target="_blank">
+              <FaGithubSquare />
+            </a>
+          </div>
         </div>
       </motion.div>
-      <SectionDivider />
     </section>
   );
 }

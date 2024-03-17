@@ -8,7 +8,11 @@ import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
   initial: { opacity: 0, y: 100 },
-  animate: (index: number) => ({ opacity: 100, y: 0, transition: { delay: 0.05 * index} }),
+  animate: (index: number) => ({
+    opacity: 100,
+    y: 0,
+    transition: { delay: 0.05 * index },
+  }),
 };
 
 export default function Skills() {
@@ -16,8 +20,9 @@ export default function Skills() {
 
   return (
     <section
+      id="skills"
       ref={ref}
-      className="mb-28 max-w-[50rem] scroll-mt-28 text-center sm:mb-40">
+      className="mb-20 max-w-[50rem] scroll-mt-28 text-center sm:mb-40">
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (

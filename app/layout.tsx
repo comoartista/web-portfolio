@@ -25,6 +25,8 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-6 overscroll-none`}>
+        <div className="absolute top-[5%] right-[43%] -z-[1] w-[600px] h-[500px] bg-[#c0afeb] rounded-full blur-3xl" />
+        <div className="absolute top-[6%] right-[10%] sm:right-[23%] -z-[1] w-[350px] h-[240px] bg-[#d8ffd0] rounded-full blur-2xl" />
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
             <div className="absolute top-0 left-0 w-full h-screen	 -z-[1] "></div>

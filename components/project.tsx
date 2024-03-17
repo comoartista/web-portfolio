@@ -11,6 +11,7 @@ export default function Project({
   title,
   description,
   tags,
+  link,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -38,6 +39,7 @@ export default function Project({
               </li>
             ))}
           </ul>
+          <a href={link}>Go to the website</a>
         </div>
 
         <Image

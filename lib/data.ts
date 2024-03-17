@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import cryptocap from "@/public/cryptocap.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -11,18 +11,20 @@ export const links = [
     name: "Home",
     hash: "#home",
   },
-  {
-    name: "About",
-    hash: "#about",
-  },
-  {
-    name: "Projects",
-    hash: "#projects",
-  },
+  // {
+  //   name: "About",
+  //   hash: "#about",
+  // },
   {
     name: "Skills",
     hash: "#skills",
   },
+
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+
   {
     name: "Contact",
     hash: "#contact",
@@ -58,17 +60,26 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "CryptoCap",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "CryptoCap is a cryptocurrency app that enables users to access real-time information about different cryptocurrencies",
+    tags: [
+      "React",
+      "CoinGecko API",
+      "Chart.js",
+      "ReactRouter",
+      "Tailwind",
+      "Vite",
+    ],
+    link: "https://crypto-currency-pi-rouge.vercel.app/",
+    imageUrl: cryptocap,
   },
   {
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    link: "https://crypto-currency-pi-rouge.vercel.app/",
     imageUrl: rmtdevImg,
   },
   {
@@ -76,6 +87,7 @@ export const projectsData = [
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    link: "https://crypto-currency-pi-rouge.vercel.app/",
     imageUrl: wordanalyticsImg,
   },
 ] as const;
