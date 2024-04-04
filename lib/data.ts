@@ -85,7 +85,7 @@ export const projectsData = [
       "Job board for remote developer jobs. It has features like filtering, sorting and pagination.",
     tags: ["JavaScript", "HTTP5", "SCSS"],
     linkToDemo: "https://event-up-ki3u.vercel.app/index.html",
-    linkToGithub: "https://github.com/comoartista/eventUp",
+    linkToGithub: "https://github.com/comoartista/event-up",
     imageUrl: eventUpImg,
   },
   {
@@ -93,7 +93,7 @@ export const projectsData = [
     description:
       "A landing page for virtual workshop on personal finance, developed with a mobile-first approach.",
     tags: ["HTML5", "SCSS", "Swiper.js"],
-    linkToDemo: "https://crypto-currency-pi-rouge.vercel.app",
+    linkToDemo: "https://finmill.vercel.app",
     linkToGithub: "https://github.com/comoartista/finmill",
     imageUrl: finmillImg,
   },
