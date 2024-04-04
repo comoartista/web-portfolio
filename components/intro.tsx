@@ -1,16 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import SectionDivider from "./section-divider";
+import { faFileArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -48,26 +48,25 @@ export default function Intro() {
               setTimeOfLastClick(Date.now());
             }}>
             Contact me here
-            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition rotate-45" />
           </Link>
           <a
             className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack"
             href="/CV.pdf"
             download>
-            Download CV <HiDownload className="opacity-60" />
+            Download CV
           </a>
           <div className="flex items-center justify-center gap-4 ">
             <a
               className="bg-white text-grey-700 p-4 flex items-center  rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer hover:text-gray-950 borderBlack"
               href="https://www.linkedin.com/in/comoartista/"
               target="_blank">
-              <BsLinkedin />
+              <FontAwesomeIcon icon={faLinkedinIn} />
             </a>
             <a
               className="bg-white text-grey-700 p-4 flex items-center rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack"
               href="https://github.com/comoartista"
               target="_blank">
-              <FaGithubSquare />
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
         </div>

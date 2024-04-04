@@ -4,7 +4,9 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import cryptocap from "@/public/cryptocap.png";
 import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import eventUpImg from "@/public/event.png";
+import finmillImg from "@/public/finmill.png";
+import packcheckImg from "@/public/packcheck.png";
 
 export const links = [
   {
@@ -62,33 +64,38 @@ export const projectsData = [
   {
     title: "CryptoCap",
     description:
-      "CryptoCap is a cryptocurrency app that enables users to access real-time information about different cryptocurrencies",
-    tags: [
-      "React",
-      "CoinGecko API",
-      "Chart.js",
-      "ReactRouter",
-      "Tailwind",
-      "Vite",
-    ],
-    link: "https://crypto-currency-pi-rouge.vercel.app/",
+      "CryptoCap is a cryptocurrency app that enables users to access real-time information about different cryptocurrencies.",
+    tags: ["React", "Chart.js", "ReactRouter", "Tailwind"],
+    linkToDemo: "https://crypto-currency-pi-rouge.vercel.app",
+    linkToGithub: "https://github.com/comoartista/crypto-currency",
     imageUrl: cryptocap,
   },
   {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    link: "https://crypto-currency-pi-rouge.vercel.app/",
-    imageUrl: rmtdevImg,
+    title: "PackCheck",
+    description: "An app that will help you package your luggage.",
+    tags: ["React", "Context API", "Zustand"],
+    linkToDemo: "https://pack-check.vercel.app/",
+    linkToGithub: "https://github.com/comoartista/packCheck",
+
+    imageUrl: packcheckImg,
   },
   {
-    title: "Word Analytics",
+    title: "EventUp",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    link: "https://crypto-currency-pi-rouge.vercel.app/",
-    imageUrl: wordanalyticsImg,
+      "Job board for remote developer jobs. It has features like filtering, sorting and pagination.",
+    tags: ["JavaScript", "HTTP5", "SCSS"],
+    linkToDemo: "https://event-up-ki3u.vercel.app/index.html",
+    linkToGithub: "https://github.com/comoartista/eventUp",
+    imageUrl: eventUpImg,
+  },
+  {
+    title: "Finmill",
+    description:
+      "A landing page for virtual workshop on personal finance, developed with a mobile-first approach.",
+    tags: ["HTML5", "SCSS", "Swiper.js"],
+    linkToDemo: "https://crypto-currency-pi-rouge.vercel.app",
+    linkToGithub: "https://github.com/comoartista/finmill",
+    imageUrl: finmillImg,
   },
 ] as const;
 

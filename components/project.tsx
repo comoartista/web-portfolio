@@ -4,6 +4,9 @@ import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -11,7 +14,8 @@ export default function Project({
   title,
   description,
   tags,
-  link,
+  linkToGithub,
+  linkToDemo,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -39,7 +43,21 @@ export default function Project({
               </li>
             ))}
           </ul>
-          <a href={link}>Go to the website</a>
+          <div className="flex gap-4 mt-4 ">
+            <a
+              href={linkToDemo}
+              target="_blank"
+              className="hover:text-gray-700 ">
+              Live Demo{" "}
+              <FontAwesomeIcon icon={faArrowRight} className="-rotate-45" />
+            </a>
+            <a
+              href={linkToGithub}
+              target="_blank"
+              className="hover:text-gray-700">
+              Code <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </div>
         </div>
 
         <Image
