@@ -23,7 +23,7 @@ export default function Intro() {
         transition={{ type: "tween", duration: 0.4 }}>
         <div className="flex flex-col items-center justify-center">
           <h1 className="mb-10 mt-4 px-4 text-4xl font-medium !leading-[1.5] text-center">
-            Hi, I'm Oksana, a frontend developer
+            Hi, I'm Oksana, a frontend developer{" "}
             <span className="italic">
               who loves turning ideas into user-friendly websites and apps.
             </span>
