@@ -73,10 +73,9 @@ export const projectsData = [
   {
     title: "PackCheck",
     description: "An app that will help you package your luggage.",
-    tags: ["React", "Context API", "Zustand"],
+    tags: ["React", "Context API", "LocalStorage"],
     linkToDemo: "https://pack-check.vercel.app/",
     linkToGithub: "https://github.com/comoartista/packCheck",
-
     imageUrl: packcheckImg,
   },
   {
@@ -102,11 +101,13 @@ export const projectsData = [
 export const skillsData = [
   "HTML",
   "CSS",
-  "JavaScript",
+  "CSS3",
+  "SCSS",
+  "JavaScript ES6",
+  "REST API",
   "React",
   "TypeScript",
-  "Zustand",
-  "Next.js",
+  "Context API",
   "Git",
   "Tailwind",
   "Framer Motion",
